@@ -3,6 +3,7 @@ const Token = require('./token.js');
 const { exec } = require('child_process');
 const Client = new Discord.Client();
 
+console.log("change");
 Client.on('ready', () => {
 	console.log('Logged in with token: ' + Token.value);
 });
