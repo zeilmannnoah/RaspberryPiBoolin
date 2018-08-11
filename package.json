@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "<h1>Raspberry Pi Boolin</h1> Testing pulling repo from ssh",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeilmannnoah/RaspberryPiBoolin.git"
+  },
+  "author": "Noah Zeilmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeilmannnoah/RaspberryPiBoolin/issues"
+  },
+  "homepage": "https://github.com/zeilmannnoah/RaspberryPiBoolin#readme"
+}
