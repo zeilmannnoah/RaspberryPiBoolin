@@ -8,19 +8,21 @@ Client.on('ready', () => {
 });
 
 Client.on('message', msg => {
-	if (msg.content === 'ping') {
-		msg.reply('pong');
-	}
-	else if (msg.content === 'restart') {
-		exec('git pull', (err, stdout, stderr) => {
-			if(err) {
-				msg.reply(stderr);
-			}
-			else {
-				msg.reply("Pulling and restarting app");
-				console.log(stdout);
-			}
-		});
+	if (msg.startsWith("pi.")) {
+		if (msg.content === 'pi.ping') {
+			msg.reply('pong');
+		}
+		else if (msg.content === 'pi.restart') {
+			exec('git pull', (err, stdout, stderr) => {
+				if(err) {
+					msg.reply(stderr);
+				}
+				else {
+					msg.reply("Pulling and restarting app");
+					console.log(stdout);
+				}
+			});
+		}
 	}
 });
 
